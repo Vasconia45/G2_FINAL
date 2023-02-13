@@ -93,7 +93,7 @@ class ControladorAdmin extends Controller
 
     public function degradar_usuario($id){
         $usuario=User::find($id);
-        $usuario->id_rol=2;
+        $usuario->role_id=2;
         $usuario->save();
         return redirect("/home/lista_usuarios");
     }
